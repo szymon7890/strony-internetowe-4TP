@@ -1,0 +1,33 @@
+.trailer {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; /* Używa jednostek fr, aby określić proporcje */
+    background-color: #000000;
+    padding: 10px;
+    gap: 10px; /* Odstęp między komórkami gridu */
+}
+
+#trailerName {
+    grid-column: 1 / -1; /* Sprawia, że ten element zajmuje całą szerokość kontenera gridu */
+    text-align: center;
+    color: white;
+    font-size: 36px;
+    margin-bottom: 10px; /* Dodaje przestrzeń poniżej */
+}
+
+.grid-item {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    font-size: 20px; /* Zmniejsza font-size dla lepszego dopasowania */
+    text-align: center;
+    padding: 10px; /* Dodaje przestrzeń wewnętrzną */
+}
+
+.grid-item img {
+    max-width: 100%; /* Ustawia obrazki i iframe, aby nie przekraczały szerokości kontenera */
+    height: 40vh; /* Utrzymuje proporcje obrazków */
+    display: block; /* Usuwa przestrzeń pod obrazkiem */
+}
+
+.grid-item iframe {
+    width: 100%;
+    height: 40vh;
+}

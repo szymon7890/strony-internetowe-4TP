@@ -1,0 +1,27 @@
+#country {
+    grid-column: 1 / -1; /* Sprawia, że ten element zajmuje całą szerokość kontenera gridu */
+    text-align: center;
+    color: white;
+    font-size: 36px;
+    margin-bottom: 10px; /* Dodaje przestrzeń poniżej */
+}
+
+.background-container-country {
+    background: url('../assets/images/BackgroundFilmingLocation.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh; /* Wysokość na pełny widok ekranu */
+    display: flex;
+    align-items: center; /* Wyśrodkowuje elementy w pionie */
+    justify-content: flex-start; /* Wyrównuje elementy do lewej strony */
+    padding: 20px; /* Opcjonalne, dodaje przestrzeń wewnętrzną */
+    box-sizing: border-box; /* Uwzględnia padding i border w wysokości kontenera */
+}
+
+.text-container-movie {
+    color: #000000;
+    font-size: 20px;
+    padding: 20px; /* Przestrzeń wewnętrzna wokół tekstu */
+    border-radius: 8px; /* Zaokrąglenie rogów kontenera tekstu */
+    max-width: 600px; /* Opcjonalnie, aby ograniczyć szerokość tekstu */
+    margin-left: 10%;
+}

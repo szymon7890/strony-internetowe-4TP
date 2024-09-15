@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Algorytm Euklidesa</title>
+        <meta name="author" content="Szymon Kalinowski">
+        <link rel="stylesheet" media="screen and (min-width: 769px)" href="styles.css">
+        <link rel="stylesheet" media="screen and (max-width: 768px)" href="mobile.css">
+        <script src="scripts.js" defer></script>
+    </head>
+    <script>
+        // Funkcja do obliczania największego wspólnego dzielnika (NWD) za pomocą algorytmu Euklidesa
+        function euklides() {
+            // Pobiera i parsuje wartości wprowadzone przez użytkownika jako liczby całkowite
+            var a = parseInt(document.getElementById("inputOne").value);
+            var b = parseInt(document.getElementById("inputTwo").value);
+
+            // Deklaruje zmienne potrzebne do obliczeń
+            var nwd;
+            var r;
+
+            // Sprawdza, czy wprowadzone wartości są liczbami
+            if (isNaN(a) || isNaN(b)) {
+                // Wyświetla alert, jeśli dane są nieprawidłowe
+                alert("Złe dane, proszę podać jeszcze raz");
+            } else {
+                // Pętla wykonuje się dopóki zmienna b nie jest równa 0
+                while (b != 0) {
+                    // Oblicza resztę z dzielenia a przez b
+                    r = a % b;
+
+                    // Pokazuje krok po kroku, jak działa algorytm w konsoli
+                    console.log("Liczba1: ", a, " modulo liczba2: ", b, " = ", r);
+
+                    // Przypisuje wartość b do a
+                    a = b;
+
+                    // Przypisuje wartość r do b
+                    b = r;
+
+                    // Wyświetla wynik pośredni w elemencie o id "wynik"
+                    document.getElementById("wynik").innerHTML += 
+                        "Liczba1: " + a + " modulo liczba2: " + b + " = " + r + "<br>";
+                }
+                // Wyświetla ostateczny wynik
+                document.getElementById("wynik").innerHTML += "NWD: " + a;
+            }
+        }
+    </script>
+    <body>
+        <h1>Podaj dwie liczby</h1>
+        <p>Podaj liczby, dla których chcesz znaleźć NWD:</p>
+        <input type="text" id="inputOne" placeholder="Pierwsza liczba"/>
+        <input type="text" id="inputTwo" placeholder="Druga liczba"/>
+        <input type="submit" value="Sprawdź" onclick="euklides()"/>
+        <div id="wynik"></div>
+    </body>
+</html>

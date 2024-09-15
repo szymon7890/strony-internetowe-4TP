@@ -1,0 +1,19 @@
+CREATE DATABASE zadanie06122023;
+
+CREATE table uzytkownik (
+	id int not null AUTO_INCREMENT,
+    name varchar(30),
+    password varchar(30),
+    PRIMARY key (id)
+);
+    
+
+INSERT INTO `uzytkownik`(`id`, `name`, `password`) VALUES (NULL, 'Adam', 'Nowak'); 
+
+INSERT INTO `uzytkownik`(`id`, `name`, `password`) VALUES (NULL, 'Katarzyna', 'czekolada'); 
+
+INSERT INTO `uzytkownik`(`id`, `name`, `password`) VALUES (NULL, 'Ania', 'szkola01!'); 
+
+INSERT INTO `uzytkownik`(`id`, `name`, `password`) VALUES (NULL, 'Mikołaj', 'Neymar00@'); 
+
+INSERT INTO `uzytkownik`(`id`, `name`, `password`) VALUES (NULL, 'Bartek', 'Strong09$'); 

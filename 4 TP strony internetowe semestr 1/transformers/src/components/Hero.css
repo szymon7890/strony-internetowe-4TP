@@ -1,0 +1,12 @@
+/* Hero.css */
+.hero {
+    background: url('../assets/images/transformersBackgound.jpg') center center/cover;
+    width: 100%;
+    height: 100vh; /* Wysokość na 100% widocznej części ekranu */
+    background-size: cover; /* Skalowanie obrazka, aby wypełniał cały obszar */
+    background-repeat: no-repeat; /* Zapobiega powtarzaniu obrazka */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
