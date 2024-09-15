@@ -1,0 +1,10 @@
+CREATE DATABASE zadanie21022024;
+
+CREATE TABLE users (
+    id INT NOT NULL AUTO_INCREMENT,
+    login VARCHAR(30) NOT NULL,
+    password VARCHAR(30) NOT NULL,
+    date DATE,
+    PRIMARY KEY (id),
+    UNIQUE (login)
+);

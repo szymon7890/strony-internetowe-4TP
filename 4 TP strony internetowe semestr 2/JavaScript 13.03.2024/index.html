@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Generowanie tablic rejestracyjnych</title>
+        <meta name="author" content="Szymon Kalinowski">
+        <link rel="stylesheet" media="screen and (min-width: 769px)" href="styles.css">
+        <link rel="stylesheet" media="screen and (max-width: 768px)" href="mobile.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+	
+		<div class="container">
+			<div class="input-section">
+				<label for="powiat">Wybierz powiat:</label>
+				<select id="powiat">
+					<option value="BE">bolesławiecki</option>
+					<option value="DZ">dzierżoniowski</option>
+					<option value="GG">głogowski</option>
+					<option value="GX">górowski</option>
+					<option value="JR">jaworski</option>
+					<option value="KQ">kamiennogórski</option>
+					<option value="JE">karkonoski</option>
+					<option value="KV">kłodzki</option>
+					<option value="LG">legnicki</option>
+					<option value="LH">lubański</option>
+					<option value="UN">lubiński</option>
+					<option value="LF">lwówecki</option>
+					<option value="ML">milicki</option>
+					<option value="OL">oleśnicki</option>
+					<option value="OA">oławski</option>
+					<option value="PP">polkowicki</option>
+					<option value="SS">średzki</option>
+					<option value="SV">strzeliński</option>
+					<option value="ID">świdnicki</option>
+					<option value="TR">trzebnicki</option>
+					<option value="WB">wałbrzyski</option>
+					<option value="WQ">wołowski</option>
+					<option value="WB">wrocławski</option>
+					<option value="ZS">ząbkowicki</option>                
+					<option value="ZO">zgorzelecki</option>                
+					<option value="ZT">złotoryjski</option>
+				</select>
+				<button id="button">Wygeneruj tablice</button>
+			</div>
+			<div class="output-section">
+				<p class="selected-value"></p>
+			</div>
+		</div>
+		  
+    </body>
+</html>
